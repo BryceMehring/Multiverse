@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://www.brycemehring.com/multiverse/app-793a03e2.css" rel="stylesheet">
+  </head>
+  <body>
+    <noscript>
+      <p class="error">
+        <strong>Enable javascript</strong>
+      </p>
+    </noscript>
+    <div id="error" class="hide">
+      <p class="error">
+        <strong id="message"></strong>
+      </p>
+    </div>
+    <script nomodule>
+      document.querySelector('#error #message').textContent = 'Browser does not support ES modules';
+      document.querySelector('#error').classList.remove('hide');
+    </script>
+    <canvas id="game"></canvas>
+    <script src="https://www.brycemehring.com/multiverse/app-793a03e2.js" type="module"></script>
+  </body>
+</html>
